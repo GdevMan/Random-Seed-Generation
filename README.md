@@ -15,12 +15,12 @@ You can easily integrate this generator into your own game or simulation:
 1. **Import the functions** into your game script:
 ```from generate_world import generate, debug```
 
-Generate a world (with optional seed for reproducibility):
+2. Generate a world (with optional seed for reproducibility):
 ```world, options = generate(size=200, max_mem_usage=102, seed=1234)```
 
-Use the world data however you like:
+3. Use the world data however you like:
   1 = land, 0 = water
   Example: iterate over world to create tiles, spawn objects, or render a map.
 
-  Optional: Debug or visualize it:
+4. Optional: Debug or visualize it:
   ```debug(world, options)```
